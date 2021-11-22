@@ -29,6 +29,7 @@ public class GeneralController {
     public BasePayload methodOne(@RequestBody @Valid @ApiParam("조회 정보") JacksonRequest jacksonRequest){
 
         return serviceChannelManager.findJackson(jacksonRequest);
+
     }
 
 }
