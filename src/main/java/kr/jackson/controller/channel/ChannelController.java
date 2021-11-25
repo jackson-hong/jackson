@@ -1,4 +1,4 @@
-package kr.jackson.controller;
+package kr.jackson.controller.channel;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -20,7 +20,7 @@ import javax.validation.Valid;
 @Api(tags = "general controller")
 @RequiredArgsConstructor
 @Slf4j
-public class GeneralController {
+public class ChannelController {
 
     private final ServiceChannelManager serviceChannelManager;
 
