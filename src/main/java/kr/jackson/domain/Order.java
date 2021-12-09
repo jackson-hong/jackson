@@ -16,7 +16,7 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String orderId;
+    private Long orderId;
 
     @Temporal(TemporalType.TIMESTAMP)
     private Date createDate;
