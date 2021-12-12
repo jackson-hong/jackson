@@ -1,4 +1,4 @@
-package kr.jackson.controller;
+package kr.jackson.controller.channel;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -17,11 +17,11 @@ import javax.validation.Valid;
 @RequestMapping("/jck/api/v1")
 @Api(tags = "general controller")
 @RequiredArgsConstructor
-public class GeneralController {
+public class ChannelController {
 
     private final ServiceChannelManager serviceChannelManager;
 
-    private static final Logger log = LoggerFactory.getLogger(GeneralController.class);
+    private static final Logger log = LoggerFactory.getLogger(ChannelController.class);
 
     @ApiOperation("JCK-101 잭슨 조회하기")
     @PostMapping("/find")
