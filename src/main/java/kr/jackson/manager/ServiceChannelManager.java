@@ -2,27 +2,19 @@ package kr.jackson.manager;
 
 import kr.jackson.controller.param.JacksonRequest;
 import kr.jackson.controller.payload.BasePayload;
-import kr.jackson.domain.Order;
-import kr.jackson.service.order.OrderService;
-import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
-
 
 @Component
-@RequiredArgsConstructor
+@Slf4j
 public class ServiceChannelManager {
 
-    private final OrderService orderService;
-
     public BasePayload findJackson(JacksonRequest request){
-        return null;
-    };
+        log.info("findJackson executed");
 
-    @Transactional
-    public void test(Order order){
-        orderService.save(order);
-        System.out.println("TRANSACTIONAL ENDS");
-    }
+        return BasePayload.builder()
+                .resultCode("0000")
+                .resultMsg("성공")
+                .build();
+    };
 }

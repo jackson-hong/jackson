@@ -16,13 +16,5 @@ class JacksonApplicationTests {
     void contextLoads() {
     }
 
-    @Test
-    void txTest(){
-        Order order = Order.builder().build();
-
-        serviceChannelManager.test(order);
-
-        System.out.println("TEST ENDS");
-    }
 
 }
